@@ -1,352 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <!-- Favicon -->
-
-    <!-- Bootstrap CSS -->
-    <!-- Version Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- AOS JS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
-
-    <!-- Galeria -->
-    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
-
-    <!-- Carousel / Slide -->
-    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- CSS Principal -->
-     <link rel="stylesheet" href="css/style.css">
+    <title>And-U</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="56x56" href="icon-2.png">
 </head>
 
 <body>
 
-    <header id="header" class="header d-flex align-items-center fixed-top"> 
+    <header>
+        <div class="container">
+            <div id="menu">
+                <a href="" id="logo">
+                    <img src="./img/icon.png" alt="img-logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#" id="menu-ativo">Home</a></li>
+                        <li><a href="conteudos.html">Conteúdos</a></li>
+                        <li><a href="fale conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-            <!-- logo -->
-            <a href="#hero" class="logo d-flex align-items-center">
-
-                <h1 class="sitename"> Agency </h1>
-                
-
-            </a>
-            <!-- menu -->
-            <nav id="navmenu" class="navmenu">
-
-                <ul>
-                    <li>
-                        <a href="#hero" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#services">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#team">Equipe</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">
-                            <span>Mais Opções</span>
-                            <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-content">
-                            <li>
-                                <a href="">Opção 1</a>
-                            </li>
-                            <li>
-                                <a href="">Opção 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            Contato
-                        </a>
-                    </li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-
-            </nav>
         </div>
-        
-
     </header>
-   
-    <main class="main">
 
-        <section id="hero" class="hero section dark-background">
-            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+    <main>
+        <section class="banner"></section>
 
-                <!-- Slide 1 -->
-                 <div class="carousel-item active">
-                    <img src="img/hero/hero-carousel-1.jpg" alt="">
-                    <div class="carousel-container">
-                        <h2>
-                            Bem Vindo nome da EMPRESA
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        </p>
-                        <a href="#" target="_blank" class="btn-get-started">
-                            Leia Mais...
-                        </a>
-                    </div>
-                 </div>
-
-                 <!-- Slide 2 -->
-                  <div class="carousel-item">
-                     <img src="img/hero/hero-carousel-2.jpg" alt="">
-                     <div class="carousel-container">
-                         <h2>
-                             Texto teste 2
-                         </h2>
-                         <p>
-                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                         </p>
-                         <a href="#" target="_blank" class="btn-get-started">
-                             Leia Mais...
-                         </a>
-                     </div>
-                  </div>
-
-                  <!-- Slide 3 -->
-                   <div class="carousel-item">
-                      <img src="img/hero/hero-carousel-3.jpg" alt="">
-                      <div class="carousel-container">
-                          <h2>
-                              Texto teste 3
-                          </h2>
-                          <p>
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                          </p>
-                          <a href="#" target="_blank" class="btn-get-started">
-                              Leia Mais...
-                          </a>
-                      </div>
-                   </div>
-
-                   <a href="#hero-carousel" role="button" data-bs-slide="prev" class="carousel-control-prev">
-                        
-                        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-                   </a>
-
-                   <a href="#hero-carousel" role="button" data-bs-slide="next" class="carousel-control-next">
-                        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-
-                   </a>
-
-                   <ol class="carousel-indicators">
-                   </ol>
-            </div>
-
-        </section>
-     
-
-        <!-- Sobre -->
-        <section id="about" class="about section">
-            <div class="container" data-aos="" data-aos-delay="">
-                
-                <div class="row gy-4">
-                    <!--- video-->
-                    <article class="col-lg-5 position-relative"> <!--COL "COLUNA" | LG "TAMANHO TELA" |--> 
-                        <img src="img/about.jpg" class="img-fluid" alt="about">
-                        <a href="https://www.youtube.com/watch?v=fZoVdy041oU" class="glightbox pulsating-play-btn"></a>
-                    </article>
-
-                    <!-- descrições -->
-                    <article class="col-lg-7 content ps-lg-4 " > <!--PS "PADDING"-->
-                        <h3>Sobre nós</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellendus facilis, reprehenderit rerum vel suscipit doloribus quasi quas vitae! Est, illum. Accusamus recusandae soluta sapiente commodi magnam laudantium saepe error!</p>
-
-                        <ul>
-                            <li>
-                                <i class="bi bi-diagram-3"> </i>
-                                <div>
-                                    <h5>Topico 1</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corrupti </p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <i class="bi bi-fullscreen-exit"> </i>
-                                <div>
-                                    <h5>Topico 2</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corrupti </p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <i class="bi bi-broadcast"> </i>
-                                <div>
-                                    <h5>Topico 3</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corrupti<p>
-                                </div>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, reiciendis corrupti, ullam laudantium explicabo totam laborum enim corporis dignissimos deleniti non pariatur possimus impedit recusandae quisquam accusamus ea ipsam aperiam.</p>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Status / Estatisticas-->
-        <section id="stats" class="stats">
-
+        <section id="indicacoes">
             <div class="container">
+                <h2 class="titulo-pagina">Indicações</h2>
 
-                <div class="row gy-4">
+                <div class="col-float-3">
+                    <div>
+                        <p> <i class="fa fa-gamepad" aria-hidden="true"></i></p>
+                        <h3>Games</h3>
+                        <p>Está em busca de informações, dicas ou novidades sobre o mundo dos jogos? Aqui você
+                            encontrará uma coleção de artigos dedicados a tudo que envolve o universo gamer. Desde
+                            análises de lançamentos e guias de estratégias até discussões sobre tendências e tecnologias
+                            no mundo dos jogos.
+                        </p>
+                        <a href="conteudos.html" class="btn btn-ind-game">Clique aqui</a>
 
-                    <article class="col-lg-3 col-md-6">
-
-                        <div class="stats-item">
-
-                            <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0"
-                            data-purecounter-end="1000" data-purecounter-duration="5"
-                            class="purecounter"></span>
-
-                            <p>
-                                <strong>Clientes:</strong><br>
-                                <span>Satisfeitos</span>
-                            </p>
-                        </div>                    
-                    </article>
-
-
-                    <article class="col-lg-3 col-md-6">
-                        <div class="stats-item">
-                            <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0"
-                            data-purecounter-end="600" data-purecounter-duration="5"
-                            class="purecounter"></span>
-
-                            <p>
-                                <strong>Projetos:</strong><br>
-                                <span>Entregues</span>
-                            </p>
-                        </div>                   
-                    </article>
-
-                    <article class="col-lg-3 col-md-6">
-                        <div class="stats-item">
-                            <i class="bi bi-clipboard-data-fill"></i>
-                            <span data-purecounter-start="0"
-                            data-purecounter-end="200" data-purecounter-duration="5"
-                            class="purecounter"></span>
-
-                            <p>
-                                <strong>Análises:</strong><br>
-                                <span>Realizadas</span>
-                            </p>
-                        </div>                    
-                    </article>
-
-                    <article class="col-lg-3 col-md-6">
-                        <div class="stats-item">
-                            <i class="bi bi-credit-card"></i>
-                            <span data-purecounter-start="0"
-                            data-purecounter-end="200" data-purecounter-duration="5"
-                            class="purecounter"></span>
-
-                            <p>
-                                <strong>Pagamentos:</strong>
-                                <span>Realizados em dia</span>
-                            </p>
-                        </div>                  
-                    </article>
+                    </div>
                 </div>
+
+                <div class="col-float-3">
+                    <div>
+                        <p> <i class="fas fa-volume-up"></i></p>
+                        <h3>Musicas</h3>
+                        <p>Se você é apaixonado por música, está no lugar certo! Aqui, você vai encontrar uma seleção de
+                            artigos que exploram o mundo musical em toda a sua diversidade. Desde resenhas de álbuns e
+                            entrevistas com artistas até análises de gêneros e tendências emergentes.</p>
+                        <a href="conteudos.html#games" class="btn btn-ind-music">Clique aqui</a>
+
+                    </div>
+                </div>
+
+                <div class="col-float-3">
+                    <div>
+                        <p> <i class="fas fa-tv"></i></p>
+                        <h3>Televisão</h3>
+                        <p>Apaixonado por séries, filmes e programas de TV? Aqui, você vai encontrar uma variedade de
+                            artigos dedicados ao universo da televisão. Descubra críticas detalhadas, entrevistas
+                            exclusivas de atores e diretores, análises de episódios, novidades e muito mais. 
+                            </p>
+                        <a href="conteudos.html" class="btn btn-ind-tv">Clique aqui</a>
+
+                    </div>
+                </div>
+        </section>
+        <div class="clear"></div>
+
+        <section id="postagens">
+            <div class="container">
+                <h2 class="titulo-pagina">Postagens</h2>
+                <p>Tem algo interessante para compartilhar? Agora você pode criar sua própria postagem! Basta clicar no
+                    botão abaixo e começar a escrever. É fácil, rápido e uma ótima maneira de se conectar com a nossa
+                    comunidade. Não perca a chance de compartilhar suas ideias, experiências ou novidades. Estamos
+                    ansiosos para ver o que você tem a dizer!</p>
+                <a href="" class="btn-postagens">Crie sua postagem</a>
             </div>
-
+            </div>
         </section>
-
-        <!-- Serviços -->
-        <section id="services" class="services">
-
-        </section>
-
-        <!-- Parallax action WhatsApp-->
-        <section id="call-to-action" class="call-to-action">
-
-        </section>
-
-        <!-- Portifólio -->
-        <section id="portfolio" class="portfolio">
-            
-        </section>
-
-        <!-- Feedbacks -->
-        <section id="testimonials" class="testimonials">
-
-        </section>
-
-        <!-- Equipes -->
-        <section id="team" class="team">
-
-        </section>
-
-        <!-- Contatos -->
-        <section id="contact" class="contact">
-
-        </section>
-
     </main>
+    <footer>
+        <div id="footer-contatos">
+            <a href="https://www.instagram.com/" id="icon-footer" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/andressa-santos-ab2881169/" id="icon-footer" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5511961047570" id="icon-footer" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            
+        </div>
 
-    <footer id="" class="">
-
+        <p>Copyright ©2024 Andressa Santos. All rights reserved.<a href="timeline.html" id="extra"> Extra</a></p>
     </footer>
-
-
-        <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-
-        <i class="bi bi-arrow-up-short"></i>
-    </a>    
-
-
-
-    <!-- Bootstrap JS Files -->
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
-
-    <!-- Galeria JS -->
-    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
-
-    <!-- Animação p/ Número = Contador -->
-    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-
-    <!-- Load IMG -->
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-
-    <!-- Filtro -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- Carousel / Slide -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.js"></script>
-
-    <!-- JS Principal -->
-    <script src="js/main.js"></script>
 </body>
+
 </html>
